@@ -34,7 +34,8 @@ ul {
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    width: 100%;    
+    width: 100%;
+    margin-right: 15px;
 }
 
 .logo {
@@ -46,6 +47,17 @@ img {
 }
 
 li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 21px;
     color: rgb(225, 231, 236);
+    height: 45px;
+    width: 100%;
+}
+
+a {
+    font-size: 21px;
+    color: rgb(225, 231, 236);
+    text-decoration: none;
 }
