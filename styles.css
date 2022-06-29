@@ -8,6 +8,7 @@
 * {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -60,7 +61,7 @@ li {
 }
 
 a {
-    font-size: 23px;
+    font-size: 19px;
     letter-spacing: 1.5px;
     color: rgb(225, 231, 236);
     text-decoration: none;
@@ -80,41 +81,14 @@ a:hover, a:focus {
 
 .sections {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
 }
-
-#news   {
-    width: 30%;
-    height: 60%;
-    padding: 50px 50px;
-}
-
-#news-img {
-    width: 100%;
-    height: 100%;
-    background-image: url(https://www.portalastronomico.com/wp-content/uploads/2020/11/planeta-cielo-de-roca.jpg);
-    background-size: cover;
-    background-position: center;
-}
- #new-planet {
-    text-align: center;
-    font-size: 20px;
-    background-color: grey;
- }
-
- #rocket-img {
-    height: 600px;
-    border-top-left-radius: 5%;
-    border-bottom-left-radius: 5%;
-    width: min-content;
- }
-
  #home-container  {
     background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/ksc-20220406-ph-jbp01-0001_orig.jpeg);
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
  }
 
  .home {
@@ -126,7 +100,7 @@ a:hover, a:focus {
  }
 
  #home-items {
-    font-size: 210px;
+    font-size: 180px;
     width: 800px;
     display: flex;
     justify-content: center;
@@ -135,8 +109,8 @@ a:hover, a:focus {
  }
 
  #about-container {
-    height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content:center;
  }
@@ -153,6 +127,7 @@ a:hover, a:focus {
 }
 
   #about-img {
+    margin: 10px;
     height: 600px;
   }
 
@@ -163,3 +138,47 @@ a:hover, a:focus {
 #desc p {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+
+#gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(15, 15, 15);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.articles {
+    height: 40vh;
+}
+
+.gallery-img {
+    height: 100%;
+    width: 450px;
+}
+
+
+ .img-title {
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(128, 128, 128, 0.666); 
+ }
+
+ #gallery-img {
+    background-image: url(https://www.portalastronomico.com/wp-content/uploads/2020/11/planeta-cielo-de-roca.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+ #gallery-img-2 {
+    background-image: url(https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/iss066e136051.jpg);
+    background-size: cover;
+    background-position: center;
+ }
+
+ #gallery-img-3 {
+    background-image: url(https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/pia00479.jpeg);
+    background-size: cover;
+    background-position: center;
+ }
