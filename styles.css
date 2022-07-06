@@ -163,6 +163,10 @@ a:hover, a:focus {
     margin-top: 20px;
 }
 
+.gallery-section h3{
+color: black;
+}
+
 #gallery-container {
     height: 100%;
     display: flex;
