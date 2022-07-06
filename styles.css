@@ -39,12 +39,16 @@ ul {
     align-items: center;
     list-style: none;
     width: 100%;
-    margin-right: 15px;
+    margin: 0 15px;
     gap: 10px;
 }
 
 .logo {
-    height: 110%;
+    height: 95%;
+}
+
+.logo img{
+    width: 100%;
 }
 
 img {
@@ -65,9 +69,6 @@ a {
     letter-spacing: 1.5px;
     color: rgb(225, 231, 236);
     text-decoration: none;
-}
-
-a {
     background-image: linear-gradient(blue  , currentcolor);
     background-position: 0% 100%;
     background-repeat: no-repeat;
@@ -79,10 +80,6 @@ a:hover, a:focus {
     color:#1c59c3;
 }
 
-.sections {
-    width: 100%;
-    height: 100vh;
-}
  #home-container  {
     background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/ksc-20220406-ph-jbp01-0001_orig.jpeg);
     background-size: cover;
@@ -93,15 +90,14 @@ a:hover, a:focus {
 
  .home {
     color:white;
-    height: 80vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
  }
 
- #home-items {
+ .home-items {
     font-size: 180px;
-    width: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,6 +109,8 @@ a:hover, a:focus {
     flex-wrap: wrap;
     align-items: center;
     justify-content:center;
+    width: 100%;
+    height: 100vh;
  }
 
 #desc {
@@ -120,15 +118,25 @@ a:hover, a:focus {
     color:white;
     display: flex;
     flex-direction: column;
-    justify-content:center;
-    align-items: center;
+    justify-content:space-evenly;
     width: 400px;
     gap: 40px;
+    height: 78%;
+}
+
+.desc-decoration{
+    color: rgb(182, 182, 182);
+    font-size: 15px;
 }
 
   #about-img {
     margin: 10px;
-    height: 600px;
+    width: 24%;
+  }
+
+  #about-img img {
+    height: 20%;
+    width: 100%;
   }
 
   .about-item {
@@ -139,23 +147,38 @@ a:hover, a:focus {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.gallery-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(15, 15, 15);
+}
+
+.gallery-section h2 {
+    color: white;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
 #gallery-container {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: rgb(15, 15, 15);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
+
 }
 
 .articles {
-    height: 40vh;
+    height: 50%;
+    width: 26%;
 }
 
 .gallery-img {
     height: 100%;
-    width: 450px;
+    width: 100%;
 }
 
 
@@ -165,7 +188,7 @@ a:hover, a:focus {
     background-color: rgba(128, 128, 128, 0.666); 
  }
 
- #gallery-img {
+ #gallery-img1 {
     background-image: url(https://www.portalastronomico.com/wp-content/uploads/2020/11/planeta-cielo-de-roca.jpg);
     background-size: cover;
     background-position: center;
@@ -181,4 +204,77 @@ a:hover, a:focus {
     background-image: url(https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/pia00479.jpeg);
     background-size: cover;
     background-position: center;
+ }
+
+ @media (max-width: 990px) {
+    #gallery-container{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+    }
+    .articles{
+        width: 50%;
+    }
+    .home-items{
+        font-size: 140px;
+    }
+    #desc{
+        width: 40%;
+        font-size: 18px;
+    }
+ }
+
+ @media (max-width: 725px){
+    .home-items{
+        font-size: 100px;
+    }
+    #about-img{
+        display: none;
+    }
+    #desc{
+        width: 60%;
+        font-size: 24px;
+    }
+    a{
+        font-size: 15px;
+    }
+ }
+
+ @media (max-width: 475px){
+    .home-items{
+        font-size: 60px;
+    }
+    #desc{
+        font-size: 18px;
+    }
+    .articles{
+        width: 70%;
+    }
+    .logo{
+        height: 80%;
+    }
+    .sections{
+        max-height: 70vh;
+    }
+ }
+
+ @media (max-width: 440px){
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        height: 64%;
+    }
+ }
+
+ @media (max-width: 360px) {
+    .logo{
+        height: 64%;
+    }
+    a{
+        font-size: 14px;
+    }
+    ul{
+        margin: 0 10px;
+    }
  }
