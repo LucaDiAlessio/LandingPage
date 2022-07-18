@@ -79,7 +79,7 @@ li a:hover,li  a:focus {
     background-size: 100% 2px;
     color:#1c59c3;
 }
-
+/* HOME */
  .home-container{
     background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/ksc-20220406-ph-jbp01-0001_orig.jpeg);
     background-size: cover;
@@ -129,7 +129,11 @@ li a:hover,li  a:focus {
  .home-items2 a:hover{
     background: black;
  }
+/* CIERRE HOME */
 
+
+
+/* ABOUT */
  .about-container {
     display: flex;
     flex-wrap: wrap;
@@ -172,7 +176,10 @@ li a:hover,li  a:focus {
 .desc p {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+/* CIERRE ABOUT */
 
+
+/* GALLERY */
 .gallery-section{
     width: 100%;
     height: 100vh;
@@ -231,6 +238,132 @@ li a:hover,li  a:focus {
     background-size: cover;
     background-position: center;
  }
+ /* CIERRE GALLERY */
+
+
+ /* CARDS */
+.cards-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.cards-section h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: rgb(230, 230, 230);
+    text-shadow: 0px 0px 10px rgb(0 0 0 / 100%);
+    margin-bottom: 2rem;
+}
+
+.cards-section h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: rgb(230, 230, 230);
+    text-shadow: 0px 0px 10px rgb(0 0 0 / 100%);
+    margin-bottom: 10rem;
+}
+
+.cards-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(231, 231, 231);
+    width: 20rem;
+    border-radius: 20%;
+    box-shadow: 0 14px 25px 5px rgb(0, 0, 0);
+    transition: transform 0.3s ease-out;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card p{
+    text-align: center;
+    padding: 0 1rem;
+}
+.card-img{
+    padding: 2rem;
+}
+/* CIERRE CARDS */
+
+
+/* CONTACT */
+.contact-section{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contact-container{
+    height: 25rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    color: rgb(230, 230, 230);
+}
+.contact-container h2{
+    font-size: 2.5rem;
+}
+.contact-container p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+.contact-icons{
+    height: 1.2rem;
+    width: 1.2rem;
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.2rem;
+    margin-right: 10px;
+}
+.contact-redes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 2rem;
+    padding-right: 2rem;
+}
+.contact-redes img{
+    height: 2rem;
+    width: 2rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 35%;
+}
+
+
+.contact-map {
+    width: 35rem;
+    height: 25rem;
+}
+
+/* CIERRE CONTACT */
+
+
+ /* MEDIA QUERIES */
 
  @media (max-width: 990px) {
     .gallery-container{
@@ -304,3 +437,5 @@ li a:hover,li  a:focus {
         margin: 0 10px;
     }
  }
+
+ /* CIERRE MEDIA QUERIES */

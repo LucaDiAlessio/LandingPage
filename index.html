@@ -11,7 +11,7 @@
     <header>
       <nav>
         <div class="logo">
-          <img src="./assets/nasa-logo-web-rgb-copia.png" alt="" />
+          <a href=""><img src="./assets/nasa-logo-web-rgb-copia.png" alt="nasa-logo" /></a>
         </div>
         <div class="botones">
           <ul>
@@ -19,19 +19,20 @@
               <a href="">HOME</a>
             </li>
             <li>
-              <a href="#gallery-container">GALLERY</a>
+              <a href="#gallery-section">GALLERY</a>
             </li>
             <li>
-              <a href="#about-container">ABOUT</a>
+              <a href="#about-section">ABOUT</a>
             </li>
             <li>
-              <a href="">CONTACT</a>
+              <a href="#contact-section">CONTACT</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
+               <!-- HOME -->
       <section class="sections home-container">
         <div class="home">
           <div class="home-items">
@@ -39,11 +40,15 @@
           </div>
           <div class="home-items2">
             <h2>RECENT LAUNCH</h2>
-            <a href="">REWATCH</a>
+            <a href="https://www.youtube.com/watch?v=21X5lGlDOfg&ab_channel=NASA" target="_blank">REWATCH</a>
           </div>
         </div>
       </section>
-      <section class="sections about-container">
+               <!-- CIERRE HOME -->
+
+
+               <!-- ABOUT -->
+      <section class="sections about-container" id="about-section">
         <article class="desc about-item">
           <p class="desc-decoration">ABOUT US --------</p>
           <h2>National Aeronautics and Space Administration</h2>
@@ -59,7 +64,11 @@
           <img src="./assets/s81-30503_orig.jpeg" alt="spaceship" />
         </div>
       </section>
-      <section class="gallery-section">
+                  <!-- CIERRE ABOUT -->
+
+
+                    <!-- GALLERY -->           
+      <section class="gallery-section" id="gallery-section">
         <h2>
           GALLERY
         </h2>
@@ -81,6 +90,49 @@
           </article>
         </div>
       </section>
+              <!-- CIERRE GALLERY -->
+
+
+              <!-- CARDS -->
+      <section class="cards-section">
+        <h2>MANUFACTURES AND LAUNCHES ADVANCED ROCKETS AND SPACECRAFT</h2>
+        <h4>The real lover is the man who can thrill you just by touching your head or smiling into your eyes or just by staring into space</h4>
+        <div class="cards-container">
+          <div class="card">
+            <img class="card-img card-img1" src="./assets/space-module-svgrepo-com.svg" alt="satelite">
+            <p>RESUABILITY WORLD'S FIRST REFLIGHT OF AN ORBITAL CLASS ROCKET</p>
+          </div>
+          <div class="card">
+            <img class="card-img card-img2" src="./assets/space-ship-svgrepo-com.svg" alt="spaceship">
+            <p>COMMERCIAL CREW TAKING AMERICA'S ASTRONAUTS TO SPACE</p>
+          </div>
+          <div class="card">
+            <img class="card-img card-img3" src="./assets/space-station.png" alt="spaceship">
+            <p>MAKING LIFE MULTIPLANETARY TAKING AMERICA'S ASTRONAUTS TO SPACE</p>
+          </div>
+        </div>
+      </section>
+                <!-- CIERRE CARDS -->
+
+                <!-- CONTACT-->
+      <section class="contact-section" id="contact-section">
+        <div class="contact-container">
+          <h2>GET IN TOUCH</h2>
+          <p> <img class="contact-icons" src="./assets/location-dot-solid.svg" alt=""> 2101 E NASA Pkwy, Houston, TX 77058</p>
+          <p> <img class="contact-icons" src="./assets/phone-solid.svg" alt="">+1 281-483-0123</p>
+          <p> <img class="contact-icons" src="./assets/envelope-solid.svg" alt=""> mail@mail.com</p>
+          <div class="contact-redes">
+            <a href="https://twitter.com/nasa" target="_blank"><img src="./assets/twitter-brands.svg" alt="nasa_twitter"></a>
+            <a href="https://www.facebook.com/NASA" target="_blank"><img src="./assets/facebook-brands.svg" alt=""></a>
+            <a href="https://www.instagram.com/nasa" target="_blank"><img src="./assets/instagram-brands.svg" alt=""></a>
+            <a href="https://www.linkedin.com/company/nasa" target="_blank"><img src="./assets/linkedin-in-brands.svg" alt=""></a>
+          </div>
+        </div>
+        <div class="contact-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13882.097145989348!2d-95.089998!3d29.5593451!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x212847ff510dada4!2sNASA!5e0!3m2!1ses-419!2sar!4v1658182706392!5m2!1ses-419!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+              <!-- CIERRE CONTACT -->
     </main>
   </body>
 </html>
