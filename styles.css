@@ -79,6 +79,10 @@ li a:hover,li  a:focus {
     background-size: 100% 2px;
     color:#1c59c3;
 }
+.sections{
+    min-height: 80vh;
+}
+
 /* HOME */
  .home-container{
     background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/ksc-20220406-ph-jbp01-0001_orig.jpeg);
@@ -275,6 +279,7 @@ li a:hover,li  a:focus {
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
+    padding-bottom: 5rem;
 }
 
 .card{
@@ -362,10 +367,21 @@ li a:hover,li  a:focus {
 
 /* CIERRE CONTACT */
 
+/* FOOTER */
+footer{
+    height: 5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+/* CIERRE FOOTER */
+
 
  /* MEDIA QUERIES */
 
- @media (max-width: 990px) {
+ @media (max-width: 990px){
     .gallery-container{
         flex-direction: column;
         gap: 20px;
@@ -381,8 +397,23 @@ li a:hover,li  a:focus {
         width: 40%;
         font-size: 18px;
     }
+    .cards-container{
+        padding: 1rem;
+    }
+    .card{
+        width: 15rem;
+    }
+    .cards-section h4 {
+        margin: 5px;
+    }
+    .card-img{
+        height: 10rem;
+    }
+    .contact-map {
+        width: 25rem;
+        height: 20rem;
  }
-
+ }
  @media (max-width: 725px){
     .home-items{
         font-size: 100px;
@@ -397,8 +428,45 @@ li a:hover,li  a:focus {
     a{
         font-size: 15px;
     }
+    .card{
+        font-size: 0.8rem;
+        width: 30%;
+    }
+    .card-img{
+        height: 5rem;
+    }
+    .contact-map{
+        display: none;
+    }
  }
 
+ @media (max-width: 570px){
+    .desc h2{
+        font-size: 2rem;
+    }
+    .desc-lorem{
+        font-size: 1.2rem;
+    }
+    .desc-decoration{
+        font-size: 0.8rem;
+    }
+    .cards-section h2{
+        font-size: 1.5rem;
+        padding: 0 1rem;
+    }
+    .cards-section h4{
+        display: none;
+    }
+ }
+@media (max-height: 500px){
+    .card{
+        margin: 0.4rem;
+        padding: 0.4rem;
+    }
+    .cards-section h2{
+        font-size: 1rem;
+    }
+}
  @media (max-width: 475px){
     .home-items{
         font-size: 60px;
@@ -412,8 +480,8 @@ li a:hover,li  a:focus {
     .logo{
         height: 80%;
     }
-    .sections{
-        min-height: 70vh;
+    .card-img{
+        display: none;
     }
  }
 
@@ -423,6 +491,42 @@ li a:hover,li  a:focus {
     }
     .logo{
         height: 64%;
+    }
+    .desc-decoration{
+        display: none;
+    }
+    .card-img{
+        display: none;
+    }
+    .cards-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    .contact-container{
+        text-align: center;
+        align-items: center;
+    }
+    .contact-redes{
+        padding: 0;
+        justify-content: space-around;
+    }
+    .contact-icons{
+        margin-right: 0;
+    }
+    .contact-redes img{
+        height: 2rem;
+        width: 2rem;
+        padding: 0.2rem;
     }
  }
 
@@ -436,6 +540,21 @@ li a:hover,li  a:focus {
     ul{
         margin: 0 10px;
     }
+    section{
+        min-height: 550px;
+    }
+    .about-container h2{
+        font-size: 1em;
+    }
+    .desc-lorem{
+        font-size: 0.9rem;
+    }
+    .desc{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
  }
+
 
  /* CIERRE MEDIA QUERIES */
