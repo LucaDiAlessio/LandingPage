@@ -555,6 +555,7 @@ footer{
         padding: 0;
     }
     .card{
+        width: 50vw;
         margin: 0.4rem;
         padding: 0.4rem;
     }
