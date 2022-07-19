@@ -554,6 +554,13 @@ footer{
         margin: 0;
         padding: 0;
     }
+    .card{
+        margin: 0.4rem;
+        padding: 0.4rem;
+    }
+    .cards-section h2{
+        font-size: 1rem;
+    }
  }
 
 
