@@ -9,6 +9,7 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 body {
@@ -80,7 +81,7 @@ li a:hover,li  a:focus {
     color:#1c59c3;
 }
 .sections{
-    min-height: 80vh;
+    min-height: 45rem;
 }
 
 /* HOME */
@@ -300,9 +301,10 @@ li a:hover,li  a:focus {
 
 .card p{
     text-align: center;
-    padding: 0 1rem;
+    padding: 0 1rem 1rem;
 }
 .card-img{
+    height: 15rem;
     padding: 2rem;
 }
 /* CIERRE CARDS */
@@ -337,8 +339,8 @@ li a:hover,li  a:focus {
     align-items: center;
 }
 .contact-icons{
-    height: 1.2rem;
-    width: 1.2rem;
+    height: 1.5rem;
+    width: 1.5rem;
     background-color: white;
     border-radius: 50%;
     padding: 0.2rem;
@@ -352,10 +354,10 @@ li a:hover,li  a:focus {
     padding-right: 2rem;
 }
 .contact-redes img{
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
     background-color: white;
-    padding: 1rem;
+    padding: 0.3rem;
     border-radius: 35%;
 }
 
@@ -410,8 +412,8 @@ footer{
         height: 10rem;
     }
     .contact-map {
-        width: 25rem;
-        height: 20rem;
+        width: 40%;
+        height: 49%;
  }
  }
  @media (max-width: 725px){
@@ -433,7 +435,7 @@ footer{
         width: 30%;
     }
     .card-img{
-        height: 5rem;
+        height: 9rem;
     }
     .contact-map{
         display: none;
@@ -479,6 +481,9 @@ footer{
     }
     .logo{
         height: 80%;
+    }
+    .card p{
+        padding: 1rem;
     }
     .card-img{
         display: none;
@@ -547,10 +552,10 @@ footer{
         font-size: 1em;
     }
     .desc-lorem{
-        font-size: 0.9rem;
+        font-size: 1.1rem;
     }
     .desc{
-        display: block;
+        font-size: 1.8rem;
         margin: 0;
         padding: 0;
     }
