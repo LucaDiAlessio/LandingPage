@@ -64,6 +64,20 @@ li {
     height: 45px;
     width: 100%;
 }
+.checkbutton{
+    font-size: 2rem;
+    color: white;
+    float: right;
+    line-height: 5rem;
+    margin-right: 2.5rem;
+    cursor: pointer;
+    display: none;
+
+}
+#check{
+    display: none;
+}
+
 
 a {
     font-size: 19px;
@@ -86,7 +100,7 @@ li a:hover,li  a:focus {
 
 /* HOME */
  .home-container{
-    background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/ksc-20220406-ph-jbp01-0001_orig.jpeg);
+    background-image: url(./assets/nasa-background-min.jpeg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -488,15 +502,38 @@ footer{
     .card-img{
         display: none;
     }
+    .checkbutton{
+        display: block;
+    }
+    ul{
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        top: 6rem;
+        left: -110%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav{
+        height: 6rem;
+    }
+    nav ul li{
+        margin: 1rem 0;
+    }
+    nav ul li a{
+        font-size: 1rem;
+    }
+    li a:hover, li a:active{
+        color: #1c59c3;
+    }
+    #check:checked ~ ul{
+        left: -15px;
+        position: absolute;
+    }
  }
 
  @media (max-width: 440px){
-    nav{
-        flex-direction: column;
-    }
-    .logo{
-        height: 64%;
-    }
     .desc-decoration{
         display: none;
     }
@@ -536,14 +573,8 @@ footer{
  }
 
  @media (max-width: 360px) {
-    .logo{
-        height: 64%;
-    }
     a{
         font-size: 14px;
-    }
-    ul{
-        margin: 0 10px;
     }
     section{
         min-height: 550px;
